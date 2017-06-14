@@ -4,7 +4,7 @@ env.hosts = ['45.32.192.195']
 env.user = 'jjspetz'
 
 DIR = '/home/jjspetz/commitscrape'
-VENV = ''
+VENV = 'echo Hello'
 
 def start ():
   with cd(DIR):
