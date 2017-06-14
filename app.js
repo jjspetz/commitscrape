@@ -13,13 +13,13 @@ contributions('jjspetz', function(err, amount){
   commitNum = amount;
 });
 
-app.get('/api', cache('1 day'), function(request, response) {
+app.get('/', cache('1 day'), function(request, response) {
   response.json(
     {commits: commitNum}
   );
 });
 
 // server port
-app.listen(8000, function() {
-  console.log('listening on port 8000')
+app.listen(8010, function() {
+  console.log('listening on port 8010')
 });
